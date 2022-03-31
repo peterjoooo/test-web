@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+}
+
+.home-section {
+    height: 100vh;
+    background-image: url(home-img.jpg);
+    background-size: cover;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+}
+.home-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-content h1 {
+    color: white;
+    text-align: center;
+}
+.home-content h1 .main {
+    font-size: 66px;
+    font-weight: 500;
+    letter-spacing: 25px;
+}
+
+.home-content h1 .sub {
+    letter-spacing: 12px;
+    font-weight: 600;
+    font-size: 25.15px;
+    text-align: center;
+}
+.first-section {
+    height: 125vh;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    margin-top: -25vh;
+    padding-top: 25vh;
+    clip-path: polygon(0 16%, 100% 0, 100% 75%, 0% 100%);
+}
+.first-heading {
+    width: 30%;
+    margin-left: 540px;
+    background-image: linear-gradient(to right, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    font-weight: 600;
+}
+.Dysgraphia-links{
+    background-image: linear-gradient(to right, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+    top: 73%;
+    left: 43.5%;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.Dysgraphia{
+    display: flex;
+    padding: 0.1px;
+}
+.desc-dysgraphia{
+    width: 350px;
+    height: 350px;
+    margin-left: 25px;
+}
+.image-1{
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+    margin: 25px;
+}
+.Dysgraphia-img{
+    width: 350px;
+    height: 350px;
+    background-image: url(1st\ card.jpg);
+    background-size: contain;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.Dysgraphia-opacity{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    position: absolute;
+    right: 100%;
+}
+.Dysgraphia-img:hover .Dysgraphia-opacity {
+    right: 0%;
+    transition: 1s ease;
+}
+.img-content{
+    font-size: 30px;
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.Dysgraphia-content{
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    text-align: left;
+    font-size: 30px;
+}
+.second-section{
+    height: 125vh;
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    margin-top: -37.5vh;
+    padding-top: 25vh;
+    clip-path: polygon(1 0, 100% 0, 100% 100%, 0% 100%);
+}
+.second-heading{
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 540px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    font-weight: 600;
+}
+.Dyscalculia-links{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
+.Dyscalculia{
+    height: 600px;
+    display: flex;
+    padding: 0.1px;
+}
+.image-2{
+    width: 350px;
+    height: 100%;
+    margin-top: 50px;
+    margin: 25px;
+}
+.Dyscalculia-img{
+    width: 350px;
+    height: 350px;
+    background-image: url(2nd\ card.jpg);
+    background-size: contain;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.Dyscalculia-opacity{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    position: absolute;
+    right: 100%;
+}
+.Dyscalculia-img:hover .Dyscalculia-opacity {
+    right: 0%;
+    transition: 1s ease;
+}
+.Dyscalculia-content{
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    text-align: left;
+    font-size: 30px;
+}
+.dyscaLclyia {width: 350px;
+    height: 350px;
+    margin-left: 25px;}
+.third-section{
+    height: 125vh;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    margin-top: -37.5vh;
+    padding-top: 25vh;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+}
+.third-heading{
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 540px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    font-weight: 600;
+}
+.Deaf-links{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
+.Deaf-Mute{
+    height: 600px;
+    display: flex;
+    padding: 0.1px;
+}
+.image-3{
+    width: 350px;
+    height: 100%;
+    margin-top: 50px;
+    margin: 25px;
+}
+.Deaf-Mute-img{
+    width: 350px;
+    height: 550px;
+    background-image: url(3rd\ card.jpg);
+    background-size: contain;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.Deaf-Mute-opacity{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    position: absolute;
+    right: 100%;
+}
+.Deaf-Mute-img:hover .Deaf-Mute-opacity {
+    right: 0%;
+    transition: 1s ease;
+}
+.Deaf-Mute-content{
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    text-align: left;
+    font-size: 30px;
+}
+.deaf-mute{width: 350px;
+    height: 350px;
+    margin-left: 25px;
+}
